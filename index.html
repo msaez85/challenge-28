@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="body">
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <table>
+            <tr>
+                <td><button class="button" onclick="clearResult()">C</button></td>
+                <td colspan="2"><button class="button" onclick="deleteVal()">←</button></td>
+                <td><button class="button" onclick="insertValue('/')">÷</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" onclick="insertValue(7)">7</button></td>
+                <td><button class="button" onclick="insertValue(8)">8</button></td>
+                <td><button class="button" onclick="insertValue(9)">9</button></td>
+                <td><button class="button" onclick="insertValue('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" onclick="insertValue(4)">4</button></td>
+                <td><button class="button" onclick="insertValue(5)">5</button></td>
+                <td><button class="button" onclick="insertValue(6)">6</button></td>
+                <td><button class="button" onclick="insertValue('-')">-</button></td>
+
+            </tr>
+            <tr>
+                <td><button class="button" onclick="insertValue(1)">1</button></td>
+                <td><button class="button" onclick="insertValue(2)">2</button></td>
+                <td><button class="button" onclick="insertValue(3)">3</button></td>
+                <td><button class="button" onclick="insertValue('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="button" onclick="insertValue(0)">0</button></td>
+                <td><button class="button" onclick="insertValue('.')">.</button></td>
+                <td rowspan="2"><button class="button" onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
